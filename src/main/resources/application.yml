@@ -1,0 +1,14 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+  thymeleaf:
+    cache: false
+    mode: HTML5
+    suffix: .html
+    prefix: classpath:/templates/
+server:
+  error:
+    path: /error
+short:
+  host: http://localhost:8080/

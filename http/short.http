@@ -1,0 +1,16 @@
+POST http://localhost:8080/api
+Content-Type: application/json
+
+{
+  "originUrl" : "www.daum.net"
+}
+
+###
+POST http://localhost:8080/api
+Content-Type: application/json
+
+{
+"originUrl" : "www.naver.com"
+}
+
+###

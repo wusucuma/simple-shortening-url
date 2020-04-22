@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>short url</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <input type="text" id="shortUrl"/><input type="button" value="생성하기" onclick="createUrl();">
+
+<script>
+    function createUrl() {
+        const url = document.getElementById("shortUrl").value;
+        console.log(url);
+        axios.post('/api', {
+            originUrl: url
+        })
+        .then(function (response) {
+            alert(response.data.shortUrl);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    }
+</script>
+</body>
+</html>
