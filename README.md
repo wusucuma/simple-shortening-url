@@ -4,7 +4,7 @@
 ### backend
 > 1. java8
 > 2. spring boot 2.2.6
-> 3. h2 database
+> 3. embeded redis
 
 ## 실행
 > 1. backend 서버 구동
